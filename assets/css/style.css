@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&family=Roboto:ital,wght@0,300;1,500&family=Source+Sans+Pro:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Comfortaa:wght@600&family=Hubballi&family=Roboto:ital,wght@0,300;1,500&family=Source+Sans+Pro:wght@600;700&display=swap');
 
 *{
     margin:0;
@@ -55,5 +55,78 @@ body{
 @media only screen and (max-width: 420px) {
     .err_banner{
         width:70%;
+    }
+}
+
+.h_banner{
+    padding:10px;
+    background:rgb(41, 41, 90);
+}
+
+.h_banner h1{
+    text-align:center;
+    color:#fff;
+    font-family: 'Averia Libre', cursive;
+}
+
+.intro-div{
+    padding-left:5%;
+    padding-top:100px;
+    background-image: url('/img/bg.png');
+    height:600px;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:fixed;
+    width:100%;
+}
+
+.intro-h{
+    font-family: 'Averia Libre', cursive;
+    font-size:70px;
+    color:#fff;
+    letter-spacing:25px;
+}
+
+.intro-p{
+    width:700px;
+    font-size:25px;
+    margin-top:30px;
+    font-family: 'Averia Libre', cursive;
+    font-weight:400;
+    color:#fff;
+    margin-bottom: 100px;
+}
+
+.intro-btn{
+    color:#fff;
+    text-decoration: none;
+    font-family: 'Averia Libre', cursive;
+    font-size:20px;
+    padding:15px;
+    background-color: rgb(247, 71, 7);
+    border-radius:10px;
+    transition: 0.2s ease-in-out;
+}
+
+.intro-btn:hover{
+    color:rgb(247, 71, 7);
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 862px) {
+    .intro-h{
+        font-size:60px;
+        letter-spacing:15px;
+    }
+    .intro-p{
+        font-size:20px;
+        margin-bottom: 70px;
+        width:80%;
+        margin-right:30px;
+    }
+    .intro-btn{
+        font-size:17px;
+        padding:14px;
+        border-radius: 7px;
     }
 }

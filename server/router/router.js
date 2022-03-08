@@ -3,7 +3,11 @@ const router = express.Router()
 const controller = require('../controller/controller')
 
 router.get('/',(req,res)=>{
-    res.render('index',{title:'News API'})
+    res.render('index',{title:'JACOB'})
+})
+
+router.get('/start',(req,res)=>{
+    res.render('get_start',{title:'JACOB'})
 })
 
 //API
