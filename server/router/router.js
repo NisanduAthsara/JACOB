@@ -10,6 +10,7 @@ router.get('/',(req,res)=>{
 router.get('/api/news',controller.getAll)
 router.get('/api/news/:id',controller.getSpecific)
 router.post('/api/news',controller.save)
+router.put('/api/news/:id',controller.update)
 router.delete('/api/news/:id',controller.delete)
 
 router.get('*',(req,res)=>{

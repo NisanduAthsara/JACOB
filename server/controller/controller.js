@@ -81,3 +81,27 @@ module.exports.delete = async (req,res)=>{
         res.send({message:err}).status(500)
     }
 }
+
+//Update a News
+module.exports.update = async (req,res)=>{
+    try{
+        if(!req.params.id){
+            res.send({ message: 'Unable to update News' }).status(500)
+        }else{
+            if(!req.body){
+                res.send({ message: 'Unable to update News' }).status(500)
+            }else{
+                const id = req.params.id
+                const data = await DB.findByIdAndUpdate(id,req.body)
+
+                if(data){
+                    res.send({ message: 'Successfullly Updated News'}).status(200)
+                }else{
+                    res.send({ message: 'Unable to update News' }).status(500)
+                }
+            }
+        }
+    }catch(err){
+        res.send({ message: err }).status(500)
+    }
+}
