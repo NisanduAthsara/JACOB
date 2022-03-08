@@ -10,6 +10,7 @@ router.get('/',(req,res)=>{
 router.get('/api/news',controller.getAll)
 router.get('/api/news/:id',controller.getSpecific)
 router.post('/api/news',controller.save)
+router.delete('/api/news/:id',controller.delete)
 
 router.get('*',(req,res)=>{
     res.render('err404',{title:"Error 404"})

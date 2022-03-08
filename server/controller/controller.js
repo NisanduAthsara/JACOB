@@ -62,3 +62,22 @@ module.exports.save = async (req, res) => {
     }
 }
 
+//Delete a News
+module.exports.delete = async (req,res)=>{
+    try{
+        if(!req.params.id){
+            res.send({ message: 'Unable to delete News' }).status(500)
+        }else{
+            const id = req.params.id
+            const data = await DB.findByIdAndDelete(id)
+
+            if(data){
+                res.send({message:'News deleted Successfully..!'}).status(200)
+            }else{
+                res.send({message:'Unable to delete that News..!'}).status(500)
+            }
+        }
+    }catch(err){
+        res.send({message:err}).status(500)
+    }
+}
