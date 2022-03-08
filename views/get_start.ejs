@@ -19,6 +19,25 @@
 
         <div class="steps-div">
             <h1>Step 2</h1>
+            <p>Once you download and install postman, you have to setup postman to test JACOB. You have to follow
+                several steps to follow to make GET , POST , DELETE , PUT requests to JACOB API.</p>
+
+            <div class="steps-div-methods">
+                <h1>GET (All)</h1>
+                <p>If you need to get all news you have to add which url you need to GET data. And also you have to
+                    choose which request method that you have to do. You can get our API GET request url by clicking
+                    below button. And you have to choose GET request and send.</p>
+                <button onclick="get()">Get Url</button>
+            </div>
+            <div class="steps-div-methods">
+                <h1>GET (Specific)</h1>
+                <p>If you need to get a specific news, you have to add url as previosly done. But in here you need to
+                    add one more thing. That is you have to add the Id of your expecting news. Then you can get the
+                    response. You have to get the ID of that news from getting all the news available in API. There are
+                    a key in json result known as '_id'. That is the id of the news. You can copy a sample specific news
+                    from clicking below button</p>
+                <button onclick="getSpecific()">Get Url</button>
+            </div>
         </div>
     </div>
 

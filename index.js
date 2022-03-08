@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 
 const router = require('./server/router/router')
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT
 
 app.use(express.urlencoded({extended:true}))
 
@@ -16,6 +16,7 @@ app.set('view engine','ejs')
 //set public assets
 app.use('/css',express.static(path.join(__dirname,'assets/css')))
 app.use('/img',express.static(path.join(__dirname,'assets/img')))
+app.use('/js',express.static(path.join(__dirname,'assets/js')))
 
 //use the routes
 app.use(router)
