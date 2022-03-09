@@ -1,5 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre&family=Comfortaa:wght@600&family=Hubballi&family=Roboto:ital,wght@0,300;1,500&family=Source+Sans+Pro:wght@600;700&display=swap');
 
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
 *{
     margin:0;
     padding: 0;
@@ -129,4 +148,113 @@ body{
         padding:14px;
         border-radius: 7px;
     }
+}
+
+.steps_div_main_h{
+    font-size:60px;
+    margin-bottom: 70px;
+    margin-top:30px;
+    font-family: 'Averia Libre', cursive;
+}
+
+.main_steps_div{
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.steps-div-step-h{
+    font-size:35px;
+    font-family: 'Averia Libre', cursive;
+}
+
+.steps-div-step-p{
+    margin-top:20px;
+    line-height:150%;
+    margin-bottom:40px;
+}
+
+.steps-div-postman-down{
+    text-decoration:none;
+    color:#fff;
+    padding:10px;
+    background:rgb(247, 71, 7);
+}
+
+.sec-step-h{
+    margin-top:70px;
+}
+
+.fa-download{
+    padding-right:10px;
+}
+
+.steps-div-methods{
+    margin-left:5%;
+    margin-right:5%;
+}
+
+.sec-method-h{
+    font-size:25px;
+    margin-top:18px;
+}
+
+.steps-div-method-p{
+    margin-top:15px;
+    line-height:150%;
+}
+
+.steps-div-method-button{
+    margin-top:25px;
+    padding:8px;
+    background:rgb(4, 32, 83);
+    border:2px solid rgb(4, 32, 83);
+    width:120px;
+    font-size:15px;
+    font-family: 'Averia Libre', cursive;
+    border-radius:5px;
+    color:#fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-bottom:60px;
+}
+
+.steps-div-method-button:hover{
+    background:#fff;
+    color:rgb(4, 32, 83);
+    border:2px solid rgb(4, 32, 83);
+}
+
+.copyright-div{
+    padding:10px;
+    background:#000;
+}
+
+.copyright-txt{
+    text-align:center;
+    color:#fff;
+}
+
+.back-div-start-pg{
+    margin-left:4%;
+    margin-top:20px;
+}
+
+.back-div-start-pg-a{
+    text-decoration:none;
+    color:#000;
+}
+
+.fa-angles-left-edited{
+    padding:10px;
+    background:rgb(21, 21, 85);
+    font-size:17px;
+    color:#fff;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+.back-div-back-txt{
+    font-size:18px;
+    font-family: 'Averia Libre', cursive;
+    color:rgb(21, 21, 85);
 }

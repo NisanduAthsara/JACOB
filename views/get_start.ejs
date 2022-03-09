@@ -5,66 +5,71 @@
         <h1>JACOB News API</h1>
     </div>
 
+    <div class="back-div-start-pg"><a href="/" class="back-div-start-pg-a"><i class="fa-solid fa-angles-left fa-angles-left-edited"></i><span class="back-div-back-txt">Back</span></a></div>
 
-    <div class="steps_div">
+
+    <div class="main_steps_div">
         <h1 class="steps_div_main_h">Steps To Follow</h1>
 
         <div class="steps-div">
-            <h1>Step 1</h1>
-            <p>You have to download Postman for test this API without using any form. Using Postman is helpful for test
+            <h1 class="steps-div-step-h">Step 1</h1>
+            <p class="steps-div-step-p">You have to download Postman for test this API without using any form. Using Postman is helpful for test
                 this API effectively. And It is helpful for get news , post your news , update and delete any news. Many
                 developers use Postman for test their API.</p>
-            <a href="https://www.postman.com/" target="_blank"><i class="fa-solid fa-download"></i>Download Postman</a>
+            <a href="https://www.postman.com/" target="_blank" class="steps-div-postman-down"><i class="fa-solid fa-download"></i>Download Postman</a>
         </div>
 
         <div class="steps-div">
-            <h1>Step 2</h1>
-            <p>Once you download and install postman, you have to setup postman to test JACOB. You have to follow
+            <h1 class="steps-div-step-h sec-step-h">Step 2</h1>
+            <p class="steps-div-step-p">Once you download and install postman, you have to setup postman to test JACOB. You have to follow
                 several steps to follow to make GET , POST , DELETE , PUT requests to JACOB API.</p>
 
             <div class="steps-div-methods">
-                <h1>GET (All)</h1>
-                <p>If you need to get all news you have to add which url you need to GET data. And also you have to
+                <h1 class="steps-div-step-h sec-method-h">GET (All)</h1>
+                <p class="steps-div-method-p">If you need to get all news you have to add which url you need to GET data. And also you have to
                     choose which request method that you have to do. You can get our API GET request url by clicking
                     below button. And you have to choose GET request and send.</p>
-                <button onclick="get()">Get Url</button>
+                <button onclick="get()" class="steps-div-method-button">Get Url</button>
             </div>
             <div class="steps-div-methods">
-                <h1>GET (Specific)</h1>
-                <p>If you need to get a specific news, you have to add url as previosly done. But in here you need to
+                <h1 class="steps-div-step-h sec-method-h">GET (Specific)</h1>
+                <p class="steps-div-method-p">If you need to get a specific news, you have to add url as previosly done. But in here you need to
                     add one more thing. That is you have to add the Id of your expecting news. Then you can get the
                     response. You have to get the ID of that news from getting all the news available in API. There are
                     a key in json result known as '_id'. That is the id of the news. You can copy a sample specific news
                     from clicking below button.</p>
-                <button onclick="getSpecific()">Get Url</button>
+                <button onclick="getSpecific()" class="steps-div-method-button">Get Url</button>
             </div>
             <div class="steps-div-methods">
-                <h1>POST</h1>
-                <p>If you need to add a new news you should have to choose POST option in postman. And you should have
+                <h1 class="steps-div-step-h sec-method-h">POST</h1>
+                <p class="steps-div-method-p">If you need to add a new news you should have to choose POST option in postman. And you should have
                     to add values to body of the request. You have to go to the body section in postman and add
                     title,description,author keys with values to add a new news. After you do this action you can POST a
                     new news. But you must initialize those body parameters with values. You can get link of the url
                     from clicking below button.</p>
-                <button onclick="get()">Get Url</button>
+                <button onclick="get()" class="steps-div-method-button">Get Url</button>
             </div>
             <div class="steps-div-methods">
-                <h1>PUT</h1>
-                <p>If you need update a specific post you need to get the Id of that post. You can get that Id as you
+                <h1 class="steps-div-step-h sec-method-h">PUT</h1>
+                <p class="steps-div-method-p">If you need update a specific post you need to get the Id of that post. You can get that Id as you
                     previously done in Get a specific news. After you get the id of that news you have to choose PUT
                     option in postman. In addition you have to add several body parameters to your request. You did this
                     action in POST request also. You have to add which values you need to update in that news. You can
                     get the sample url of this request by clicking below button.</p>
-                <button onclick="getSpecific()">Get Url</button>
+                <button onclick="getSpecific()" class="steps-div-method-button">Get Url</button>
             </div>
             <div class="steps-div-methods">
-                <h1>DELETE</h1>
-                <p>If you need delete a specific news , you need to choose the DELETE option in postman. After you
+                <h1 class="steps-div-step-h sec-method-h">DELETE</h1>
+                <p class="steps-div-method-p">If you need delete a specific news , you need to choose the DELETE option in postman. After you
                     choose that you need to get the Id of that post as previously done. And you have to add that id to
                     your request url and send. You can get a sample url by clicking below button.</p>
-                <button onclick="getSpecific()">Get Url</button>
+                <button onclick="getSpecific()" class="steps-div-method-button">Get Url</button>
             </div>
         </div>
     </div>
 
+    <div class="copyright-div">
+        <div class="copyright-txt">Copyright &copy; 2022 &bull; JACOB</div>
+    </div>
     <!--Include footer-->
     <%-include('inc/_footer.ejs')%>
